@@ -11,8 +11,12 @@ public class Dev {
   private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
   private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
 
-  // Getters e Setters
+  // Construtor
+  public Dev(String nome) {
+    this.nome = nome;
+  }
 
+  // Getters e Setters
   public String getNome() {
     return this.nome;
   }

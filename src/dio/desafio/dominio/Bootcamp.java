@@ -15,6 +15,12 @@ public class Bootcamp {
   private Set<Dev> devsInscritos = new HashSet<>();
   private Set<Conteudo> conteudos = new LinkedHashSet<>();
 
+  // Construtor
+  public Bootcamp(String nome, String descricao) {
+    this.nome = nome;
+    this.descricao = descricao;
+  }
+
   // Getters e Setters
   public String getNome() {
     return this.nome;
@@ -58,6 +64,7 @@ public class Bootcamp {
     this.conteudos = conteudos;
   }
 
+  // Equals e Hashcode
   @Override
   public int hashCode() {
     final int prime = 31;
@@ -71,7 +78,6 @@ public class Bootcamp {
     return result;
   }
   
-  // Equals e Hashcode
   @Override
   public boolean equals(Object obj) {
     if (this == obj)
